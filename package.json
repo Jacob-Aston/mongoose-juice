@@ -1,0 +1,27 @@
+{
+  "name": "mongoose-juice",
+  "version": "1.0.0",
+  "description": "A Social Network API using Express.js for routing, a MongoDB database, and the Mongoose ODM.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jacob-Aston/mongoose-juice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jacob-Aston/mongoose-juice/issues"
+  },
+  "homepage": "https://github.com/Jacob-Aston/mongoose-juice#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
