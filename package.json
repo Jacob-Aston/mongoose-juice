@@ -4,7 +4,10 @@
   "description": "A Social Network API using Express.js for routing, a MongoDB database, and the Mongoose ODM.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "dev": "nodemon index",
+    "seed": "node utils/seed"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,7 @@
     "url": "https://github.com/Jacob-Aston/mongoose-juice/issues"
   },
   "homepage": "https://github.com/Jacob-Aston/mongoose-juice#readme",
+  
   "dependencies": {
     "express": "^4.18.2",
     "mongoose": "^6.9.0"
