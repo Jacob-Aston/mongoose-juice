@@ -1,73 +1,73 @@
 const names = [
-    'Aaran',
-    'Aaren',
-    'Aarez',
-    'Aarman',
-    'Aaron',
-    'Aaron-James',
-    'Aarron',
-    'Aaryan',
-    'Aaryn',
-    'Aayan',
-    'Aazaan',
-    'Abaan',
-    'Abbas',
-    'Abdallah',
-    'Abdalroof',
-    'Abdihakim',
-    'Abdirahman',
-    'Abdisalam',
-    'Abdul',
-    'Abdul-Aziz',
-    'Abdulbasir',
-    'Abdulkadir',
-    'Abdulkarem',
-    'Smith',
-    'Jones',
-    'Coollastname',
-    'enter_name_here',
-    'Ze',
-    'Zechariah',
-    'Zeek',
-    'Zeeshan',
-    'Zeid',
-    'Zein',
-    'Zen',
-    'Zendel',
-    'Zenith',
-    'Zennon',
-    'Zeph',
-    'Zerah',
-    'Zhen',
-    'Zhi',
-    'Zhong',
-    'Zhuo',
-    'Zi',
-    'Zidane',
-    'Zijie',
-    'Zinedine',
-    'Zion',
-    'Zishan',
-    'Ziya',
-    'Ziyaan',
-    'Zohaib',
-    'Zohair',
-    'Zoubaeir',
-    'Zubair',
-    'Zubayr',
-    'Zuriel',
-    'Xander',
-    'Jared',
-    'Grace',
-    'Alex',
-    'Mark',
-    'Tamar',
-    'Farish',
-    'Sarah',
-    'Nathaniel',
-    'Parker',
-  ];
-  
+  "Aaran",
+  "Aaren",
+  "Aarez",
+  "Aarman",
+  "Aaron",
+  "Aaron-James",
+  "Aarron",
+  "Aaryan",
+  "Aaryn",
+  "Aayan",
+  "Aazaan",
+  "Abaan",
+  "Abbas",
+  "Abdallah",
+  "Abdalroof",
+  "Abdihakim",
+  "Abdirahman",
+  "Abdisalam",
+  "Abdul",
+  "Abdul-Aziz",
+  "Abdulbasir",
+  "Abdulkadir",
+  "Abdulkarem",
+  "Smith",
+  "Jones",
+  "Coollastname",
+  "enter_name_here",
+  "Ze",
+  "Zechariah",
+  "Zeek",
+  "Zeeshan",
+  "Zeid",
+  "Zein",
+  "Zen",
+  "Zendel",
+  "Zenith",
+  "Zennon",
+  "Zeph",
+  "Zerah",
+  "Zhen",
+  "Zhi",
+  "Zhong",
+  "Zhuo",
+  "Zi",
+  "Zidane",
+  "Zijie",
+  "Zinedine",
+  "Zion",
+  "Zishan",
+  "Ziya",
+  "Ziyaan",
+  "Zohaib",
+  "Zohair",
+  "Zoubaeir",
+  "Zubair",
+  "Zubayr",
+  "Zuriel",
+  "Xander",
+  "Jared",
+  "Grace",
+  "Alex",
+  "Mark",
+  "Tamar",
+  "Farish",
+  "Sarah",
+  "Nathaniel",
+  "Parker",
+];
+
 //   const thoughtTexts = [
 //     'Decision Tracker',
 //     'Find My Phone',
@@ -88,7 +88,7 @@ const names = [
 //     'Poker',
 //     'Deliveries',
 //   ];
-  
+
 //   const possibleTags = [
 //     'html',
 //     'css',
@@ -106,22 +106,25 @@ const names = [
 //     'mongodb',
 //     'sql',
 //   ];
-  
+
 //   const users = [];
-  
-  // Get a random item given an array
-  const getRandomArrItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
-  // Gets a random integer
-  function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
-  }
-  
-  // Gets a random username
-  const getRandomUsername = () =>
-    `${getRandomArrItem(names)}-${getRandomArrItem(names)}-${getRandomInt(0,11)}`;
-  
+
+// Get a random item given an array
+const getRandomArrItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
+// Gets a random integer
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
+}
+
+// Gets a random username
+const getRandomUsername = () =>
+  `${getRandomArrItem(names)}-${getRandomArrItem(names)}-${getRandomInt(
+    0,
+    11
+  )}`;
+
 //   // Function to generate random thoughts that we can add to the database. Includes application tags.
 //   const getRandomThoughts = (int) => {
 //     let results = [];
@@ -134,7 +137,7 @@ const names = [
 //     }
 //     return results;
 //   };
-  
+
 //   // Create the tags that will be added to each application
 //   const getApplicationTags = (int) => {
 //     if (int === 1) {
@@ -149,7 +152,6 @@ const names = [
 //     }
 //     return results;
 //   };
-  
-  // Export the functions for use in seed.js
-  module.exports = { getRandomUsername,  };
-  
+
+// Export the functions for use in seed.js
+module.exports = { getRandomUsername };
