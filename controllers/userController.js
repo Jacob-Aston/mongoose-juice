@@ -60,7 +60,6 @@ module.exports = {
       )
       .catch((err) => res.status(500).json(err));
   },
-  // Remove video response
   removeFriend(req, res) {
     User.findOneAndUpdate(
       { _id: req.params.userId },
